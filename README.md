@@ -3,12 +3,12 @@ make an api which offers up data from a database. test it local and then host it
 
 ## Quick!
 
-We need a microservice hosted on Bookku! It needs to "speak" a REST API. It has to be backed by a PostgresQL database. 
+We need a microservice hosted on Heroku! It needs to "speak" a REST API. It has to be backed by a PostgresQL database. (But don't worry, Heroku does all this for you. (sweet!))
 The boss says you have to use Django and Django REST Framework (DRF) to do the work.
 
-At this point, this project has got a django site running, with an admin set of pages.
+At this point, this project has got a django site running, with an admin set of pages. But there is more to do.
 
-The data we need loaded into the SQL database is in the `bestsellers-with-categories.csv` file. There i data on 550 some books in there.
+The data we need loaded into the SQL database is in the `bestsellers-with-categories.csv` file. There is data on 550 some books in there.
 
 First you need to get the Django project running! You need to run some setup commands:
 
@@ -39,11 +39,12 @@ Then first `manage.py` commands creates all the migrations for the database sche
 The fourth runs the server.
 Look at both 
 `http://localhost:8000` and `http://localhost:8000/admin`
-The second you should oogin as admin with the password you chose in the createsuperuser step.
+The second you should login as admin with the password you chose in the createsuperuser step.
 
 ### Your Mission
 
 Work thru these steps. 
+You have to add some code to hook the API machinery up to the Book model in books/models.py
 
 ### Serialize the Book model
 
