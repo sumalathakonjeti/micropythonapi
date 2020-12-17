@@ -163,6 +163,10 @@ Now go to localhost:8000
 
 ### What about Data?
 
+First, add three books (three of your favorite) for test data. They do not have ot be real. Make sure that your API returns a JSON payload that contains your test books.
+
+Then, you need to figure out how to load the 550 books in the big csv file.
+
 Well, decide on using one of these methods to read the data into your local sqlite database.
 
 https://stackoverflow.com/questions/2459979/how-to-import-csv-data-into-django-models
@@ -172,6 +176,8 @@ https://stackoverflow.com/questions/2459979/how-to-import-csv-data-into-django-m
 Now I'd like you to save all your changes to github, and figure out a way to load all this up to a Heroku app. Heroku is a terrific hosting site that allows you to take a complete python app like this one and put it up and make it publicly available.
 
 There are a lot of pages that help you do this. By the way, the Procfile I supplied, it might or might not work. It might need editing.
+
+You will need to load your data from the csv into your Heroku database too. So be careful when you choose a method. If you do a pip install to add a pythonpackage to load the data, you need to add that package to the requirements.txt file. (That way, Heroku will know you need it and install it automatically for you like it does with all the other required packages.)
 
 ### Useful commands
 
