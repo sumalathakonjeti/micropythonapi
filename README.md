@@ -173,11 +173,16 @@ https://stackoverflow.com/questions/2459979/how-to-import-csv-data-into-django-m
 
 ### Okay, Heroku
 
-Now I'd like you to save all your changes to github, and figure out a way to load all this up to a Heroku app. Heroku is a terrific hosting site that allows you to take a complete python app like this one and put it up and make it publicly available.
+Now I'd like you to save all your changes to github, and figure out a way to load all this up to a Heroku app. https://heroku.com 
+Get a free account.
+Download the CLI - use it to make your app and then to move your app from your git repo up to heroku and run it.
+Heroku is a terrific hosting site that allows you to take a complete python app like this one and put it up and make it publicly available.
 
 There are a lot of pages that help you do this. By the way, the Procfile I supplied, it might or might not work. It might need editing.
 
-You will need to load your data from the csv into your Heroku database too. So be careful when you choose a method. If you do a pip install to add a pythonpackage to load the data, you need to add that package to the requirements.txt file. (That way, Heroku will know you need it and install it automatically for you like it does with all the other required packages.)
+You will need to load your data from the csv into your Heroku database too. So be careful when you choose a method. 
+If you do a pip install to add a python package to load the data, you need to add that package to the requirements.txt file. 
+(That way, Heroku will know you need it and install it automatically for you like it does with all the other required packages.)
 
 ### Useful commands
 
