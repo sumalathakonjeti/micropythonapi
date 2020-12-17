@@ -83,7 +83,7 @@ To do so, we need to:
 - Query the database for all Books
 - Pass that database queryset into the serializer we just created, so that it gets converted into JSON and rendered
 
-In booksapi/views.py:
+In books/views.py:
 
 ```
 # views.py
@@ -115,7 +115,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('booksapi.urls')),
+    path('', include('books.urls')),
  ]
 ```
 
@@ -123,7 +123,7 @@ urlpatterns = [
 
 If you’re paying attention and not just blindly copy-pasting, you’ll notice that we included 'booksapi.urls' . That’s a path to a file we haven’t edited yet. And that’s where Django is going to look next for instructions on how to route this URL.
 
-So, let’s go there next — booksapi/urls.py:
+So, let’s go there next — books/urls.py:
 ```
 # booksapi/urls.py
 from django.urls import include, path
