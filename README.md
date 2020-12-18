@@ -69,7 +69,7 @@ from .models import Book
 class BookSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Book
-        fields = ('name', 'alias')
+        # fields = ('name', 'alias') # use all the fields
 ```
 
 ### Display the data
