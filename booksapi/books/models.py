@@ -4,9 +4,6 @@ from django.db import models
 
 # Create your models here.
 
-
-
-
 class Book(models.Model):
     name = models.CharField(max_length=256)
     author = models.CharField(max_length=128)
@@ -19,18 +16,19 @@ class Book(models.Model):
     def __str__(self):
         return self.name
 
-path = "bestsellers-with-categories.csv"
 
+path = 'bestsellers-with-categories.csv'
+# /Users/anusha/Documents/PythonProjects/micropythonapi/booksapi/static
 with open(path) as f:
-        reader = csv.reader(f)
-        next(reader)
-        for row in reader:
-            _, created = Book.objects.get_or_create(
-                name=row[0],
-                author=row[1],
-                rating=row[2],
-                reviews=row[3],
-                price=row[4],
-                year=row[5],
-                genre=row[6]
-            )
+    reader = csv.reader(f)
+    next(reader)
+    for row in reader:
+        _, created = Book.objects.get_or_create(
+            name=row[0],
+            author=row[1],
+            rating=row[2],
+            reviews=row[3],
+            price=row[4],
+            year=row[5],
+            genre=row[6]
+        )
