@@ -21,7 +21,7 @@ $ cd booksapi
 
 $ python manage.py makemigrations
 $ python manage.py migrate
-$ python manage.py createsuperuser --email admin@example.com --username admin
+$ python manage.py createsuperuser --email admin@example.com --username admins
 
 $ python manage.py runserver
 ```
@@ -34,7 +34,8 @@ Pip install all the required packages for the project.
 
 CD into the main code directory.
 
-Then first `manage.py` commands creates all the migrations for the database schema. The second applies them to the current database. (Locally that will be sqlite, on Bookku it will be Postgres) The third puts a "superuser" into the database so you can log into the admin inteface within the django site.
+Then first `manage.py` commands creates all the migrations for the database schema. 
+The second applies them to the current database. (Locally that will be sqlite, on Bookku it will be Postgres) The third puts a "superuser" into the database so you can log into the admin inteface within the django site.
 
 The fourth runs the server.
 Look at both 
