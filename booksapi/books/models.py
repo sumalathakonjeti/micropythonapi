@@ -19,7 +19,7 @@ class Book(models.Model):
     def __str__(self):
         return self.name
 
-path = "/Users/suma/Flask_test/micropythonapi/bestsellers-with-categories.csv"
+path = "bestsellers-with-categories.csv"
 
 with open(path) as f:
         reader = csv.reader(f)
