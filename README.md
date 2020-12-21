@@ -23,7 +23,7 @@ $ python manage.py makemigrations
 $ python manage.py migrate
 $ python manage.py createsuperuser --email admin@example.com --username admins
 
-$ python manage.py runserver
+$ python3 manage.py runserver
 ```
 
 Create a python virtual env for the project on your local machine.
