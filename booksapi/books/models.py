@@ -18,7 +18,7 @@ class Book(models.Model):
 
 
 path = 'bestsellers-with-categories.csv'
-# /Users/anusha/Documents/PythonProjects/micropythonapi/booksapi/static
+
 with open(path) as f:
     reader = csv.reader(f)
     next(reader)
